@@ -185,6 +185,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+  
+  .calc{
+    width:100%;
   }
   .sections-container{
     display: flex;
@@ -194,9 +199,16 @@ body {
     overflow-x: hidden;
   
   }
+  .home{
+    width:100%;
+  }
   .navbar{
     margin-top: 20px;
+    width: 100%;
+    margin-left:40%;
   }
+
+
   #grades input, #grades select {
     width: 90%; /* Adjusting for the input and select borders */
     
@@ -206,6 +218,32 @@ body {
   #btn {
     width: 90%;
     
+  }
+}
+.menu-icon {
+  display: none; /* Hide menu icon by default */
+  cursor: pointer;
+  display: none; /* Hide menu icon by default */
+  position: absolute;
+  top: 20px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  z-index: 999; /* Ensure menu icon stays above other content */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      display: none; /* Hide navbar by default on small screens */
+  }
+
+  .menu-icon {
+      display: block; /* Show menu icon on small screens */
+  }
+
+  .menu-line {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
   }
 }
 

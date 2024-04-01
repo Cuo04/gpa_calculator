@@ -27,10 +27,17 @@ btn.addEventListener("click", function addGrade() {
 } )
 
 
-
-
 function updateResults() {
     const gpa = (totalGradePoints / totalCredits).toFixed(2);
     document.getElementById('totalCredits').textContent = totalCredits;
     document.getElementById('gpa').textContent = gpa;
+}
+
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.style.display === "block") {
+        navbar.style.display = "none";
+    } else {
+        navbar.style.display = "block";
+    }
 }
