@@ -48,3 +48,9 @@ let date = new Date().getFullYear();
 const foot = document.querySelector(".footer");
 // foot.innerHTML =  "<p>Copyright &copy; <span>date</span>  CRUDOTECH | All Rights Reserved.</p>";
 
+const button2 = document.getElementById("btnn");
+
+button2.addEventListener("click", function() {
+    document.getElementById('totalCredits').textContent = '0';
+    document.getElementById('gpa').textContent = '0.00';
+})

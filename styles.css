@@ -104,6 +104,13 @@ label{
   font-size: 16px;
 }
 
+.btn1 {
+  background-color: #134e16;
+}
+.btn2{
+  background-color: rgb(8, 8, 8);
+}
+
 #btn:hover {
   background-color: #134e16;
 }
@@ -233,7 +240,7 @@ label{
     overflow-x: hidden;
   }
 
-  #btn {
+  .btn {
     width: 90%;
     
   }

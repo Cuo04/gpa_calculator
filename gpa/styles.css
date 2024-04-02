@@ -91,21 +91,28 @@ label{
   border-radius: 4px;
 }
 
-#btn {
-  display: block;
-  width: 100%;
+.btn {
+  display: inline;
+  width: 49%;
   padding: 12px;
-  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 16px;
+  margin-top: 10px;
 }
 
-#btn:hover {
+.btn1 {
   background-color: #134e16;
+}
+.btn2{
+  background-color: rgb(8, 8, 8);
+}
+
+.btn:hover {
+  background-color: rgb(205, 187, 29) ;
 }
 
 #results {
@@ -233,10 +240,10 @@ label{
     overflow-x: hidden;
   }
 
-  #btn {
-    width: 90%;
-    
+  .btn {
+    width: 90%; 
   }
+
   .footer{
     font-size: 40%;
     max-width: 100%;
