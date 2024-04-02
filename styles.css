@@ -4,8 +4,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(310deg, #14131b 50%, #ececec 100%);
-  overflow-x: hidden;
+  background-image: url('https://img.freepik.com/free-vector/back-school-black-chalk-board-background-with-different-stationary-objects-realistic_1284-55360.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white */
 }
 
 
@@ -54,6 +56,9 @@ body {
   margin-left: 50px;
 
 }
+label{
+  color: black;
+}
 
 .navbar a:hover{
   color:#337e37;
@@ -61,15 +66,17 @@ body {
 }
 .home {
   margin: 20px auto;
-  width: 400px;
-  background-color: rgba(243, 241, 241, 0.4);
+  max-width: 400px;
+  background-color: rgba(243, 241, 241, 0.9);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .calc h2 {
-  color: #333;
+  color: #137e2a;
   text-align: center;
 }
 
@@ -110,6 +117,12 @@ body {
   color: #333;
 }
 
+#results p, #results #gpa{
+  color:#0b0808;
+  font-weight: 800;
+  font-size: larger;
+}
+
 #about, #contact {
   padding: 20px;
   margin: 20px auto;
@@ -120,12 +133,12 @@ body {
 }
 
 #about h2, #contact h2 {
-  color: #333;
+  color: #078f09;
   margin-bottom: 10px;
 }
 
 #about p, #contact p {
-  color: #fff;
+  color: #0e0d0d;
   line-height: 1.6;
 }
 
@@ -167,7 +180,7 @@ body {
 }
 
 .section p {
-  color: #555;
+  color: #080101;
   line-height: 1.6;
 }
 
@@ -195,12 +208,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .sections-container {
+    width: 100%; /* Set full width for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+}
   body{
     overflow-x: hidden;
   
   }
   .home{
     width:100%;
+    max-width: none;
   }
   .navbar{
     margin-top: 20px;
@@ -219,6 +237,11 @@ body {
     width: 90%;
     
   }
+  .footer{
+    font-size: 40%;
+  
+  }
+
 }
 .menu-icon {
   display: none; /* Hide menu icon by default */
@@ -245,5 +268,12 @@ body {
       background-color: #fff;
       margin: 5px;
   }
+}
+.footer{
+  background-color: goldenrod;
+  margin-bottom: -20px;
+  align-content: center;
+  padding: 0 30%;
+
 }
 

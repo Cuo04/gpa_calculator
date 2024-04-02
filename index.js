@@ -33,11 +33,18 @@ function updateResults() {
     document.getElementById('gpa').textContent = gpa;
 }
 
-function toggleMenu() {
+
+const icon = document.querySelector(".menu-icon");
+icon.addEventListener("click", function toggleMenu() {
     var navbar = document.getElementById("navbar");
     if (navbar.style.display === "block") {
         navbar.style.display = "none";
     } else {
         navbar.style.display = "block";
     }
-}
+});
+
+let date = new Date().getFullYear();
+const foot = document.querySelector(".footer");
+// foot.innerHTML =  "<p>Copyright &copy; <span>date</span>  CRUDOTECH | All Rights Reserved.</p>";
+
